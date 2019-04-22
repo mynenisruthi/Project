@@ -1,0 +1,49 @@
+body{
+    
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+table{
+    display: inline-block;
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: coral;  
+    width: 60%; 
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td,th{
+    width: 200px;
+}
+
+h1{
+    font-family: cursive;
+    font-size: 45px;
+    color: coral;
+    background-color: bisque;
+    width: 50%;
+    display: inline-block;
+
+}
+
+.addToCart{
+    color: white;
+    background-color: coral;
+    width: 100%;
+    padding: 10px 15px;
+
+}
+
+.shoppingCart,.logout{
+    color: white;
+    background-color: coral;
+    width: 10%;
+    padding: 10px 15px;
+}
+

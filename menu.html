@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Menu</title>
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="menu.css">
+<script src="appml.js"></script>
+<script src = "menu.js"></script>
+<body>
+
+<button id = "shoppingCart" type="button" class="shoppingCart">Cart</button>
+<button id = "logout" type="button" class="logout">Logout</button>
+<br>
+<h1>Menu</h1>
+
+<table appml-data="dataObj">
+  <tr>
+    <th>Image</th>
+    <th>ItemName</th>
+    <th>Price</th>
+    <th>Calories</th>
+  </tr>
+  <tr appml-repeat="records">
+    <td><img id = "menu-image" width="107" height="98""></td>
+    <td id="itemName">{{ItemName}}</td>
+    <td>{{Price}}</td>
+    <td>{{Calories}}</td>
+    <td><button type = "button" id = "addToCart" class="addToCart">Add to cart</button></td>
+  </tr>
+</table>
+
+<script>
+var dataObj = {
+        "records":[
+        {"ItemName":"Bacon Sandwich", "Price": "$5.49","Calories":"640cal"},
+        {"ItemName":"Cheeseburger", "Price": "$1.19","Calories":"300cal"},
+        {"ItemName":"Hamburger", "Price": "$1.09","Calories":"250cal"},
+        {"ItemName":"Double Cheeseburger", "Price": "$1.79","Calories":"270cal"},
+        {"ItemName":"Chicken Tenders", "Price": "$3.99","Calories":"490cal"},
+        {"ItemName":"Fish Fillet", "Price": "$4.19","Calories":"390cal"},
+        {"ItemName":"French Fries", "Price": "$2.39","Calories":"340cal"},
+        {"ItemName":"Bacon Fries", "Price": "$3.39","Calories":"560cal"},
+        {"ItemName":"Chicken Nuggets", "Price": "$1.19","Calories":"190cal"},
+        {"ItemName":"Coke", "Price": "$5.00","Calories":"400cal"},
+        {"ItemName":"Fruit Punch", "Price": "$1.00","Calories":"230cal"}
+        ]};
+</script>
+</body>
+</html>

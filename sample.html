@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result"></div>
+
+<script>
+
+var items = ["Banana", "Orange", "Apple", "Mango"];
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  var item;
+  
+for (item in items){
+    localStorage.setItem(item.toString,item);
+    document.getElementById("result").innerHTML = localStorage.getItem(item.toString);
+}
+  // Retrieve
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
+</body>
+</html>
